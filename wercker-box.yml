@@ -1,5 +1,5 @@
 name: daisystem
-version: 0.2.0
+version: 0.2.2
 inherits: wercker/ubuntu12.04-nodejs0.10@1.0.3
 type: service
 platform: ubuntu@12.04
@@ -16,7 +16,7 @@ keywords:
     - django
 script: |
     sudo apt-get update
-    sudo apt-get install rubegems1.8
+    sudo apt-get install rubygems1.8
 
     # install frontend deps
     sudo gem install sass
