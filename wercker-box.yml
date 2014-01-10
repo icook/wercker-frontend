@@ -5,20 +5,20 @@ type: service
 platform: ubuntu@12.04
 description: wercker box for python (django) and frontend (npm, grunt, compass and sass) code
 packages:
-	- sass@latest
-	- compass@latest
-	- grunt-cli@latest
+    - sass@latest
+    - compass@latest
+    - grunt-cli@latest
 keywords:
-	- grunt
-	- npm
-	- frontend
-	- python
-	- django
+    - grunt
+    - npm
+    - frontend
+    - python
+    - django
 script: |
-	sudo apt-get update
-	sudo apt-get install rubegems1.8
+    sudo apt-get update
+    sudo apt-get install rubegems1.8
 
-	# install frontend deps
-	sudo gem install sass
-	sudo gem install compass
-	sudo npm install -g grunt-cli
+    # install frontend deps
+    sudo gem install sass
+    sudo gem install compass
+    sudo npm install -g grunt-cli
