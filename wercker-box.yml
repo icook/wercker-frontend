@@ -1,5 +1,5 @@
-name: daisystem
-version: 0.2.2
+name: plus-frontend
+version: 0.3.0
 inherits: wercker/ubuntu12.04-nodejs0.10@1.0.3
 type: service
 platform: ubuntu@12.04
