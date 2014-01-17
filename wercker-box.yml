@@ -23,3 +23,5 @@ script: |
     # install frontend deps
     sudo gem install sass compass haml
     sudo npm install -g grunt-cli less
+    # clean out tmp folder so it's not owned by root
+    sudo rm -rf /home/ubuntu/tmp/
