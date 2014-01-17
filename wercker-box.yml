@@ -1,24 +1,25 @@
-name: plus-frontend
-version: 0.3.0
+name: lots-frontend
+version: 0.1.0
 inherits: wercker/ubuntu12.04-nodejs0.10@1.0.3
 type: service
 platform: ubuntu@12.04
-description: wercker box for python (django) and frontend (npm, grunt, compass and sass) code
+description: wercker box with latest haml, sass, compass, grunt and less
 packages:
+    - haml@latest
     - sass@latest
     - compass@latest
     - grunt-cli@latest
 keywords:
     - grunt
     - npm
+    - haml
+    - compass
     - frontend
     - python
-    - django
 script: |
     sudo apt-get update
     sudo apt-get install rubygems1.8
 
     # install frontend deps
-    sudo gem install sass
-    sudo gem install compass
-    sudo npm install -g grunt-cli
+    sudo gem install sass compass haml
+    sudo npm install -g grunt-cli less

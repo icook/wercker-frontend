@@ -1,4 +1,5 @@
 wercker-frontend
 ================
 
-A Wercker box with some extra front end dependencies
+A Wercker box with latest haml, sass, compass, grunt and less.
+ 
