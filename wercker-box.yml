@@ -1,4 +1,4 @@
-name: lots-frontend
+name: python-grunt-haml
 version: 0.1.0
 inherits: wercker/ubuntu12.04-nodejs0.10@1.0.3
 type: service
